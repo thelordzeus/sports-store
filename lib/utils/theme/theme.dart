@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
-import "package:sports_store/utils/theme/custom_themes/text_theme.dart";
+import "package:sports_store/utils/theme/widget_themes/elevated_button_theme.dart";
+
+import "package:sports_store/utils/theme/widget_themes/text_theme.dart";
 
 class TAppTheme {
   // This class is not meant to be instantiated or extended; this constructor. makes it private
@@ -12,6 +14,7 @@ class TAppTheme {
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     textTheme: TTextTheme.lightTextTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -20,5 +23,6 @@ class TAppTheme {
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
   );
 }
